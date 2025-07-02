@@ -1,6 +1,8 @@
 import styles from './home.module.css';
 import Nav from './Nav.jsx';
 import penthouse from '../assets/images/penthouse.png';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 export default function Home(){
     return (
         <div>
@@ -14,12 +16,18 @@ export default function Home(){
                     <h4>start you journey towards ownership today!</h4>
                     <button>get started</button>
                 </div>
-                <div className={styles.image}>
+               
                  <img src={penthouse} alt="" />
-                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
+            
+                <div className={styles.rightimage}>
+                    <div>
+                        <i class="bi bi-house"></i>
+                        <h3>Explore Properties</h3>
+                    </div>
+                    <div>
+                        <i class="bi bi-people"></i>
+                        <h3>Connect with Agents</h3>
+                    </div>
                     <a href="">Explore</a>
                 </div>
             </div>
